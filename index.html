@@ -1,0 +1,634 @@
+```python
+# Define the updated HTML template based on user corrections
+updated_html_content = """<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio IT - Dimas Ikhsan</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm 15mm;
+            background-color: #f8fafc;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1e293b;
+            background-color: #f8fafc;
+            line-height: 1.5;
+            font-size: 10.5pt;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Full bleed top banner on first page */
+        .header-banner {
+            margin: -18mm -15mm 25px -15mm;
+            padding: 25px 15mm;
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+
+        .header-banner h1 {
+            font-size: 22pt;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+
+        .header-banner .subtitle {
+            font-size: 13pt;
+            color: #38bdf8;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-info {
+            font-size: 9.5pt;
+            color: #cbd5e1;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .contact-info li:last-child {
+            margin-right: 0;
+        }
+
+        .contact-info a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 13.5pt;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 25px 0 12px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e2e8f0;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 0 0 12px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* Skills Grid using Table layout */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .skills-table td {
+            vertical-align: top;
+            padding: 8px 12px;
+            width: 50%;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+        }
+
+        .skills-category {
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+
+        .skills-list {
+            color: #475569;
+            font-size: 9.5pt;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Experience and Projects */
+        .job-header {
+            margin-bottom: 8px;
+            page-break-after: avoid;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: #0f172a;
+            font-size: 11pt;
+        }
+
+        .job-company {
+            color: #0284c7;
+            font-weight: 600;
+        }
+
+        .job-date {
+            float: right;
+            color: #64748b;
+            font-size: 9.5pt;
+            font-weight: normal;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+
+        .project-title {
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .project-tech {
+            font-size: 9pt;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .math {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>DIMAS IKHSAN</h1>
+        <div class="subtitle">System Operations & IT Managed Services Specialist</div>
+        <ul class="contact-info">
+            <li>Jakarta, Indonesia</li>
+            <li>•</li>
+            <li>dimasihksan@gmail.com</li>
+            <li>•</li>
+            <li>linkedin.com/in/diiimasikhsan/</li>
+        </ul>
+    </div>
+
+    <h2>Profil Profesional</h2>
+    <p>
+        Profesional TI dengan pengalaman nyata selama 2 tahun dalam bidang <em>Managed Services</em> dan Operasional Sistem. 
+        Memiliki spesialisasi dalam pengelolaan, pemantauan, serta otomatisasi workflow menggunakan aplikasi <strong>Control-M</strong> pada lingkungan infrastruktur perbankan kritis yang menuntut ketersediaan tinggi. Terbiasa menangani administrasi dasar server Linux (Red Hat) dan Windows Server, virtualisasi VMware, serta penyelesaian insiden harian sesuai dengan standar SLA yang ketat. Memiliki komitmen tinggi untuk terus mengeksplorasi dan mempelajari berbagai lini produk IT serta arsitektur infrastruktur baru guna mendukung efisiensi operasional perusahaan.
+    </p>
+
+    <h2>Keahlian Teknis</h2>
+    <table class="skills-table">
+        <tr>
+            <td>
+                <div class="skills-category">Automation & Monitoring</div>
+                <div class="skills-list">BMC Control-M (Job Scheduling, Active Environment Monitoring, Troubleshooting)</div>
+            </td>
+            <td>
+                <div class="skills-category">Operating Systems</div>
+                <div class="skills-list">Red Hat Enterprise Linux (RHEL), Windows Server</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="skills-category">Infrastructure & Virtualization</div>
+                <div class="skills-list">VMware vSphere, ESXi, Virtual Machine Management</div>
+            </td>
+            <td>
+                <div class="skills-category">Database & Programming</div>
+                <div class="skills-list">SQL (Data Querying, Basic Administration), C++</div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Pengalaman Profesional</h2>
+    <div class="job-header">
+        <span class="job-date">Januari 2023 – Sekarang</span>
+        <div class="job-title">Managed Service Control-M Professional</div>
+        <div class="job-company">PT. Software System Information Nusantara (Onsite Client: Bank Negara Indonesia)</div>
+    </div>
+    <div class="clear"></div>
+    <p style="margin-top: 5px;">
+        Bertanggung jawab penuh atas pengawasan dan pemeliharaan stabilitas sistem otomatisasi batch processing perbankan yang berjalan secara real-time selama 24/7. Fokus utama meliputi mitigasi kegagalan proses serta koordinasi teknis antar-tim.
+    </p>
+    <ul>
+        <li><strong>Manajemen Otomasi Operasional:</strong> Mengelola, memantau, dan memastikan eksekusi ribuan active jobs harian pada platform BMC Control-M berjalan sesuai jadwal untuk mendukung core system perbankan.</li>
+        <li><strong>Penanganan Insiden & SLA:</strong> Melakukan analisis cepat dan troubleshooting logis pada setiap job kegagalan (job failure) guna meminimalkan downtime dan menjaga kepatuhan target Service Level Agreement (SLA).</li>
+        <li><strong>Administrasi Environment:</strong> Melakukan konfigurasi dasar, pemeliharaan, serta deployment Control-M Agent di sisi infrastruktur server berbasis Linux (RHEL) dan Windows Server.</li>
+        <li><strong>Kolaborasi Teknis:</strong> Menjadi jembatan komunikasi aktif bersama tim infrastruktur, basis data, dan developer dalam melakukan pengujian, standardisasi skrip, serta deployment otomasi job baru ke lingkungan produksi.</li>
+    </ul>
+
+    <h2>Pendidikan</h2>
+    <div class="job-header">
+        <span class="job-date">2019 – 2023</span>
+        <div class="job-title">Sarjana Komputer (S1) – Informatika</div>
+        <div class="job-company">Universitas Nasional</div>
+    </div>
+    <div class="clear"></div>
+    <p style="margin-top: 5px; font-id: 9.5pt; color: #475569;">
+        Lulus dengan Indeks Prestasi Kumulatif (IPK) <span class="math">3.60 / 4.00</span>. Fokus studi mendalam pada Sistem Operasi, Arsitektur Jaringan, Rekayasa Perangkat Lunak, dan Manajemen Basis Data.
+    </p>
+
+    <h2>Proyek Eksplorasi & Lab Mandiri</h2>
+    <p style="color: #475569; font-size: 9.5pt; margin-bottom: 12px;">
+        <em>Bagian ini mendokumentasikan aktivitas pengembangan kompetensi mandiri di luar lingkup otomasi Control-M:</em>
+    </p>
+
+    <div class="project-card">
+        <div class="project-title">Lab Mandiri: Administrasi & Pengerasan Keamanan OS RHEL</div>
+        <div class="project-tech">Linux, Security hardening, Bash scripting</div>
+        <p style="margin: 0; font-size: 9.5pt;">Membangun deployment server berbasis Red Hat Enterprise Linux, mengonfigurasi hak akses pengguna (user privileges), manajemen repositori lokal, serta pembuatan skrip otomasi cron jobs untuk pemeliharaan berkala.</p>
+    </div>
+
+    <div class="project-card">
+        <div class="project-title">Lab Mandiri: Implementasi Virtualisasi Infrastruktur</div>
+        <div class="project-tech">VMware vSphere, ESXi, Hypervisor</div>
+        <p style="margin: 0; font-size: 9.5pt;">Melakukan instalasi dan konfigurasi hypervisor VMware, melakukan alokasi dan manajemen resource (CPU, RAM, vDisk) untuk beberapa VM, serta mensimulasikan kegagalan jaringan virtual.</p>
+    </div>
+
+</body>
+</html>
+"""
+
+# Save updated HTML
+with open("portofolio_it_dimas_v2.html", "w", encoding="utf-8") as f:
+    f.write(updated_html_content)
+
+# Render updated PDF
+from weasyprint import HTML
+HTML("portofolio_it_dimas_v2.html").write_pdf("Portofolio_IT_Dimas_Ikhsan_V2.pdf")
+
+print("Updated PDF generated successfully.")
+
+```
+
+```text
+Updated PDF generated successfully.
+
+
+```
+
+Perubahan telah berhasil diterapkan. Proyek eksplorasi SQL sudah dihapus, serta informasi kontak Anda kini telah diperbarui menggunakan email `dimasihksan@gmail.com` dan tautan LinkedIn `[https://www.linkedin.com/in/diiimasikhsan/](https://www.linkedin.com/in/diiimasikhsan/)`.
+
+Berikut dokumen portofolio IT versi terbaru (V2) Anda yang sudah siap diunduh:
+
+Your PDF file is ready
+[file-tag: code-generated-file-e648944a-8af3-4baf-bca1-217e6e7ed642]
+
+There is a file you can reference named "Portofolio_IT_Dimas_Ikhsan_V2.pdf". Refer to this file by its name verbatim.
+
+There is a file you can reference named "portofolio_it_dimas_v2.html". Refer to this file by its name verbatim.
+[source: 1]DIMAS IKHSAN
+System Operations & IT Managed Services Specialist
+Jakarta, Indonesia
+dimasihksan@gmail.com
+[linkedin.com/in/diiimasikhsan/]()
+Profil Profesional
+Profesional TI dengan pengalaman nyata selama 2 tahun dalam bidang Managed Services dan Operasional
+Sistem. Memiliki spesialisasi dalam pengelolaan, pemantauan, serta otomatisasi workflow menggunakan
+aplikasi Control-M pada lingkungan infrastruktur perbankan kritis yang menuntut ketersediaan tinggi.
+Terbiasa menangani administrasi dasar server Linux (Red Hat) dan Windows Server, virtualisasi VMware,
+serta penyelesaian insiden harian sesuai dengan standar SLA yang ketat. Memiliki komitmen tinggi untuk
+terus mengeksplorasi dan mempelajari berbagai lini produk IT serta arsitektur infrastruktur baru guna
+mendukung efisiensi operasional perusahaan.
+Keahlian Teknis
+Automation & Monitoring
+| Operating Systems
+
+BMC Control-M (Job Scheduling, Active Environment
+Monitoring, Troubleshooting)
+| Red Hat Enterprise Linux (RHEL), Windows Server
+
+Infrastructure & Virtualization
+VMware vSphere, ESXi, Virtual Machine Management
+| Database & Programming
+SQL (Data Querying, Basic Administration), C++
+
+Pengalaman Profesional
+Managed Service Control-M Professional
+Januari 2023 - Sekarang
+PT. Software System Information Nusantara (Onsite Client: Bank Negara Indonesia)
+Bertanggung jawab penuh atas pengawasan dan pemeliharaan stabilitas sistem otomatisasi batch processing
+perbankan yang berjalan secara real-time selama $24/7$. Fokus utama meliputi mitigasi kegagalan proses serta
+koordinasi teknis antar-tim.
+• Manajemen Otomasi Operasional: Mengelola, memantau, dan memastikan eksekusi ribuan active jobs
+harian pada platform BMC Control-M berjalan sesuai jadwal untuk mendukung core system perbankan.
+• Penanganan Insiden & SLA: Melakukan analisis cepat dan troubleshooting logis pada setiap job
+kegagalan (job failure) guna meminimalkan downtime dan menjaga kepatuhan target Service Level
+Agreement (SLA).
+• Administrasi Environment: Melakukan konfigurasi dasar, pemeliharaan, serta deployment Control-M
+Agent di sisi infrastruktur server berbasis Linux (RHEL) dan Windows Server.
+• Kolaborasi Teknis: Menjadi jembatan komunikasi aktif bersama tim infrastruktur, basis data, dan
+developer dalam melakukan pengujian, standardisasi skrip, serta deployment otomasi job baru ke
+lingkungan produksi.
+Pendidikan
+Sarjana Komputer (S1) - Informatika
+Universitas Nasional
+2019-2023
+Lulus dengan Indeks Prestasi Kumulatif (IPK) 3.60/4.00. Fokus studi mendalam pada Sistem Operasi,
+Arsitektur Jaringan, Rekayasa Perangkat Lunak, dan Manajemen Basis Data.
+Proyek Eksplorasi & Lab Mandiri
+Bagian ini mendokumentasikan aktivitas pengembangan kompetensi mandiri di luar lingkup otomasi Control-M:
+Lab Mandiri: Administrasi & Pengerasan Keamanan OS RHEL
+LINUX, SECURITY HARDENING, BASH SCRIPTING
+Membangun deployment server berbasis Red Hat Enterprise Linux, mengonfigurasi hak akses pengguna (user
+privileges), manajemen repositori lokal, serta pembuatan skrip otomasi cron jobs untuk pemeliharaan berkala.
+Lab Mandiri: Implementasi Virtualisasi Infrastruktur
+VMWARE VSPHERE, ESXI, HYPERVISOR
+Melakukan instalasi dan konfigurasi hypervisor VMware, melakukan alokasi dan manajemen resource (CPU, RAM,
+vDisk) untuk beberapa VM, serta mensimulasikan kegagalan jaringan virtual.
+[source: 2]
+
+```
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        background-color: #f8fafc;
+        line-height: 1.5;
+        font-size: 10.5pt;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Full bleed top banner on first page */
+    .header-banner {
+        margin: -18mm -15mm 25px -15mm;
+        padding: 25px 15mm;
+        background-color: #0f172a;
+        color: #ffffff;
+    }
+
+    .header-banner h1 {
+        font-size: 22pt;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+        letter-spacing: -0.5px;
+        color: #ffffff;
+    }
+
+    .header-banner .subtitle {
+        font-size: 13pt;
+        color: #38bdf8;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+    }
+
+    .contact-info {
+        font-size: 9.5pt;
+        color: #cbd5e1;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .contact-info li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    .contact-info li:last-child {
+        margin-right: 0;
+    }
+
+    .contact-info a {
+        color: #cbd5e1;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 13.5pt;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 25px 0 12px 0;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #e2e8f0;
+        page-break-after: avoid;
+    }
+
+    p {
+        margin: 0 0 10px 0;
+        text-align: justify;
+    }
+
+    ul {
+        margin: 0 0 12px 0;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 4px;
+    }
+
+    /* Skills Grid using Table layout */
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+    }
+
+    .skills-table td {
+        vertical-align: top;
+        padding: 8px 12px;
+        width: 50%;
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+    }
+
+    .skills-category {
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 4px;
+        font-size: 10pt;
+    }
+
+    .skills-list {
+        color: #475569;
+        font-size: 9.5pt;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Experience and Projects */
+    .job-header {
+        margin-bottom: 8px;
+        page-break-after: avoid;
+    }
+
+    .job-title {
+        font-weight: 700;
+        color: #0f172a;
+        font-size: 11pt;
+    }
+
+    .job-company {
+        color: #0284c7;
+        font-weight: 600;
+    }
+
+    .job-date {
+        float: right;
+        color: #64748b;
+        font-size: 9.5pt;
+        font-weight: normal;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .project-card {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-left: 4px solid #0284c7;
+        padding: 12px 15px;
+        margin-bottom: 12px;
+        page-break-inside: avoid;
+    }
+
+    .project-title {
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 4px;
+    }
+
+    .project-tech {
+        font-size: 9pt;
+        color: #64748b;
+        font-weight: 600;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .math {
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #0284c7;
+    }
+</style>
+
+```
+
+```
+<div class="header-banner">
+    <h1>DIMAS IKHSAN</h1>
+    <div class="subtitle">System Operations & IT Managed Services Specialist</div>
+    <ul class="contact-info">
+        <li>Jakarta, Indonesia</li>
+        <li>•</li>
+        <li>dimasihksan@gmail.com</li>
+        <li>•</li>
+        <li>[linkedin.com/in/diiimasikhsan/](https://linkedin.com/in/diiimasikhsan/)</li>
+    </ul>
+</div>
+
+<h2>Profil Profesional</h2>
+<p>
+    Profesional TI dengan pengalaman nyata selama 2 tahun dalam bidang <em>Managed Services</em> dan Operasional Sistem. 
+    Memiliki spesialisasi dalam pengelolaan, pemantauan, serta otomatisasi workflow menggunakan aplikasi <strong>Control-M</strong> pada lingkungan infrastruktur perbankan kritis yang menuntut ketersediaan tinggi. Terbiasa menangani administrasi dasar server Linux (Red Hat) dan Windows Server, virtualisasi VMware, serta penyelesaian insiden harian sesuai dengan standar SLA yang ketat. Memiliki komitmen tinggi untuk terus mengeksplorasi dan mempelajari berbagai lini produk IT serta arsitektur infrastruktur baru guna mendukung efisiensi operasional perusahaan.
+</p>
+
+<h2>Keahlian Teknis</h2>
+<table class="skills-table">
+    <tr>
+        <td>
+            <div class="skills-category">Automation & Monitoring</div>
+            <div class="skills-list">BMC Control-M (Job Scheduling, Active Environment Monitoring, Troubleshooting)</div>
+        </td>
+        <td>
+            <div class="skills-category">Operating Systems</div>
+            <div class="skills-list">Red Hat Enterprise Linux (RHEL), Windows Server</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="skills-category">Infrastructure & Virtualization</div>
+            <div class="skills-list">VMware vSphere, ESXi, Virtual Machine Management</div>
+        </td>
+        <td>
+            <div class="skills-category">Database & Programming</div>
+            <div class="skills-list">SQL (Data Querying, Basic Administration), C++</div>
+        </td>
+    </tr>
+</table>
+
+<h2>Pengalaman Profesional</h2>
+<div class="job-header">
+    <span class="job-date">Januari 2023 – Sekarang</span>
+    <div class="job-title">Managed Service Control-M Professional</div>
+    <div class="job-company">PT. Software System Information Nusantara (Onsite Client: Bank Negara Indonesia)</div>
+</div>
+<div class="clear"></div>
+<p style="margin-top: 5px;">
+    Bertanggung jawab penuh atas pengawasan dan pemeliharaan stabilitas sistem otomatisasi batch processing perbankan yang berjalan secara real-time selama 24/7. Fokus utama meliputi mitigasi kegagalan proses serta koordinasi teknis antar-tim.
+</p>
+<ul>
+    <li><strong>Manajemen Otomasi Operasional:</strong> Mengelola, memantau, dan memastikan eksekusi ribuan active jobs harian pada platform BMC Control-M berjalan sesuai jadwal untuk mendukung core system perbankan.</li>
+    <li><strong>Penanganan Insiden & SLA:</strong> Melakukan analisis cepat dan troubleshooting logis pada setiap job kegagalan (job failure) guna meminimalkan downtime dan menjaga kepatuhan target Service Level Agreement (SLA).</li>
+    <li><strong>Administrasi Environment:</strong> Melakukan konfigurasi dasar, pemeliharaan, serta deployment Control-M Agent di sisi infrastruktur server berbasis Linux (RHEL) dan Windows Server.</li>
+    <li><strong>Kolaborasi Teknis:</strong> Menjadi jembatan komunikasi aktif bersama tim infrastruktur, basis data, dan developer dalam melakukan pengujian, standardisasi skrip, serta deployment otomasi job baru ke lingkungan produksi.</li>
+</ul>
+
+<h2>Pendidikan</h2>
+<div class="job-header">
+    <span class="job-date">2019 – 2023</span>
+    <div class="job-title">Sarjana Komputer (S1) – Informatika</div>
+    <div class="job-company">Universitas Nasional</div>
+</div>
+<div class="clear"></div>
+<p style="margin-top: 5px; font-id: 9.5pt; color: #475569;">
+    Lulus dengan Indeks Prestasi Kumulatif (IPK) <span class="math">3.60 / 4.00</span>. Fokus studi mendalam pada Sistem Operasi, Arsitektur Jaringan, Rekayasa Perangkat Lunak, dan Manajemen Basis Data.
+</p>
+
+<h2>Proyek Eksplorasi & Lab Mandiri</h2>
+<p style="color: #475569; font-size: 9.5pt; margin-bottom: 12px;">
+    <em>Bagian ini mendokumentasikan aktivitas pengembangan kompetensi mandiri di luar lingkup otomasi Control-M:</em>
+</p>
+
+<div class="project-card">
+    <div class="project-title">Lab Mandiri: Administrasi & Pengerasan Keamanan OS RHEL</div>
+    <div class="project-tech">Linux, Security hardening, Bash scripting</div>
+    <p style="margin: 0; font-size: 9.5pt;">Membangun deployment server berbasis Red Hat Enterprise Linux, mengonfigurasi hak akses pengguna (user privileges), manajemen repositori lokal, serta pembuatan skrip otomasi cron jobs untuk pemeliharaan berkala.</p>
+</div>
+
+<div class="project-card">
+    <div class="project-title">Lab Mandiri: Implementasi Virtualisasi Infrastruktur</div>
+    <div class="project-tech">VMware vSphere, ESXi, Hypervisor</div>
+    <p style="margin: 0; font-size: 9.5pt;">Melakukan instalasi dan konfigurasi hypervisor VMware, melakukan alokasi dan manajemen resource (CPU, RAM, vDisk) untuk beberapa VM, serta mensimulasikan kegagalan jaringan virtual.</p>
+</div>
+
+```
